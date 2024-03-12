@@ -2,41 +2,107 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(5, 1, 1, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  font-size: xx-large;
+  border: 2px solid black;
+  width: auto;
+  padding: 1rem;
+
+}
+
+body {
+  margin: 0;
+  display: flex;  
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.home {
+  font-size: xxx-large;
+  background-color: grey;
+  width: 600px;
   text-align: center;
+  padding: 100px;
+  height: 400px;
+  border-radius: 50%;
+  margin-top: 300px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.articles {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article-title {
+  background-color: rgb(179, 176, 176);
+  font-size: large;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.article-title:hover {
+  background-color: grey;
+  transform: scale(1.2);
 }
 
-.card {
-  padding: 2em;
+.article-title img {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 10px;
+  object-fit: cover;
 }
 
-.read-the-docs {
-  color: #888;
+.single-article {
+  padding: 20px;
+  font-size: 23px;
+  margin-top: 60px;
+  width: 700px;
+  background-color: rgb(93, 110, 93);
+  border: solid 2px black;
+  color: wh;
+  border-radius: 30px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  border: 7px solid white;
+} 
+
+.single-article img {
+  border: solid 5px black;
+  right: 20px;
 }
