@@ -35,6 +35,22 @@ h1 {
   line-height: 1.1;
 }
 
+a {
+  text-decoration:solid;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: rgb(8, 112, 123);
+}
+
+a:active {
+  color: black;
+}
+
 .home {
   font-size: xxx-large;
   background-color: grey;
@@ -87,8 +103,9 @@ h1 {
 
 .single-article {
   padding: 20px;
+  padding-top: 0px;
   font-size: 23px;
-  margin-top: 60px;
+  margin-top: 30px;
   width: 700px;
   background-color: rgb(93, 110, 93);
   border: solid 2px black;
@@ -97,12 +114,84 @@ h1 {
 }
 
 .title {
+  position: relative;
   text-align: center;
   color: white;
   border: 7px solid white;
-} 
+  border-right: 0;
+  border-left: 0;
+}
+
+.author {
+  font-size: 34px;
+  text-align: center;
+  color: white;
+}
+
+.description {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  color: white;
+}
 
 .single-article img {
   border: solid 5px black;
   right: 20px;
 }
+
+.loading {
+  text-align: center;
+  margin-top: 300px;
+  font-size: 75px;
+}
+
+.comment-btn {
+  color: rgb(49, 24, 24);
+  position: relative;
+  padding: 20px;
+  margin-left: 200px;
+  font-size: large;
+}
+
+.comments-title {
+  padding: 15px;
+  border: solid 2px black;
+  border-radius: 20px;
+  margin-top: 15px;
+  width: 800px
+}
+
+.comments-title:hover {
+  background-color: antiquewhite;
+}
+
+.comment-author {
+  font-size: xx-large;
+  font-weight:bolder;
+  text-align: center;
+}
+
+.comment-body {
+  font-style: italic;
+    border-style:dashed;
+    padding: 10px;
+    border-right: 0;
+    border-left: 0;
+}
+
+.comment-date {
+  font-size: medium;
+}
+
+.comment-vote {
+  font-size: x-large;
+  text-align: center;
+}
+
+.comments-card {
+  padding-top: 10px;
+  margin-top: 40px;
+}
+

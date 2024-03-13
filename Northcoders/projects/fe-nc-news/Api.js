@@ -17,6 +17,12 @@ export function fetchArticleId(article_id) {
     })
 }
 
+export function fetchArticleCommentsById(article_id) {
+    return marketPlaceAPI.get(`/articles/${article_id}/comments`).then(res => {
+        return res.data
+    })
+}
+
 // export function fetchTopics(topic_name) {
 //     return marketPlaceAPI.get("/topics", {params: {topic_name}})
 // }

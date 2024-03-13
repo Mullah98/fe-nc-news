@@ -9,7 +9,6 @@ export default function Articles () {
     useEffect(() => {
         fetchAllArticles()
           .then((response) => {
-            console.log(response);
     
             setArticles(response); 
     
@@ -19,14 +18,14 @@ export default function Articles () {
             console.error('Error fetching articles:', error);
             setIsLoading(false);
           });
-      }, []);
+        }, []);
     
-      if (isLoading) {
-        return <p>Currently loading articles...</p>;
-      }
+        if (isLoading) {
+        return <h1 className='loading'>Currently loading articles...</h1>;
+        }
     
 
-    return (
+        return (
         <div className="articles">
         {articles.map(article => {
             return <ArticleCard key={article.article_id} article={article}/>
