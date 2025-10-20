@@ -1,0 +1,28 @@
+* {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.todo-container {
+  text-align: center;
+}
+
+.todo-form {
+  margin-top: 5vh;
+}
+
+.todo-list {
+  margin-top: 5vh;
+}
+
+ul {
+  list-style: none;
+}
+
+.delete-btn {
+  margin-left: 20px;
+}
+
+button {
+  font-size: 24px;
+}
